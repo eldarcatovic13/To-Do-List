@@ -1,0 +1,161 @@
+body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2772db;
+}
+/* To-Do List */
+.toDoList{
+    width: 450px;
+    height: 325px;
+    margin-left: 420px;
+    margin-top: 80px;
+    border: 0;
+    border-radius: 10px;
+    background-color: white;
+}
+/* First Section */
+.start{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Input */
+.form__group {
+    position: relative;
+    padding: 20px 0 0;
+    width: 100%;
+    max-width: 250px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #2772db;
+    outline: 0;
+    font-size: 15px;
+    color: black;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+  
+  .form__field::placeholder {
+    color: transparent;
+}
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+}
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #2772db;
+    pointer-events: none;
+}
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #2772db, #38caef);
+    border-image-slice: 1;
+}
+  
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #2772db;
+    font-weight: 700;
+}
+  
+  /* Reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+}
+  /* Input button */
+.start button{
+    margin-top: 30px;
+    margin-right: 25px;
+    height: 35px;
+    width: 65px;
+    font-size: 13px;
+    border: 0;
+    border-radius: 3px;
+    background-color: #2772db;
+    color: white;
+    cursor: pointer;
+}
+.start button:hover{
+    transform: scale(1.08);
+    transition: 350ms;
+    background-color: #1e549f;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttonDiv button{
+    margin-right: 10px;
+    height: 25px;
+    width: 52px;
+    font-size: 13px;
+    border: 0;
+    border-radius: 3px;
+    background-color: #2772db;
+    color: white;
+    cursor: pointer;
+}
+.buttonDiv button:hover{
+    transform: scale(1.08);
+    transition: 350ms;
+    background-color: #1e549f;
+}
+.confirmButton{
+    margin-right: 10px;
+    height: 25px;
+    width: 60px;
+    font-size: 13px;
+    border: 0;
+    border-radius: 3px;
+    background-color: #2772db;
+    color: white;
+    cursor: pointer;
+}
+.confirmButton:hover{
+    transform: scale(1.08);
+    transition: 350ms;
+    background-color: #1e549f;
+}
+.listLi{
+    margin-top: 7px;
+    margin-right: 40px;
+    height: 30px;
+    padding: 5px;
+    background-color: #b6e1e0;
+    color: black;
+    border: 1.5px solid #d2cfcf;
+    border-radius: 4px;
+}
+.inputEdit{
+    width: 180px;
+    border: 1.5px solid #2772db;
+    border-radius: 3px;
+}

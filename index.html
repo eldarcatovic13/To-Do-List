@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Oswald:wght@300&family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="toDoList">
+        <div class="start">
+          <div id="startSection" class="form__group field">
+            <input
+              id="inputEnter"
+              type="input"
+              class="form__field"
+              placeholder="Text"
+              required=""
+            />
+            <label for="text" class="form__label">Enter</label>
+          </div>
+          <button id="addButton">Add</button>
+        </div>
+        <ul id="list"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
